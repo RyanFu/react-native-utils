@@ -21,4 +21,4 @@
 
 4. 解析普通链接参数
 
-> `let params = Utils.analysisUriQuery(uri)
+> `let params = Utils.analysisUriQuery(uri)`
