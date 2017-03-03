@@ -4,21 +4,22 @@
 
 - import Utils from 'xxx/utils'
 
-1. Get
+- Get
 
 > `Utils.get(uri, callback)`
 
-2. Post
+- Post
 
 > ```
+> //如果解析不出来，可能是服务器解析方式与fetch不合，请将type改为application/x-www-form-urlencode，且body: queryString.stringify(data)
 > //type默认是application/json，可不填，如需修改再填写
 > Utils.post(uri, object, callback, type)
 > ```
 
-3. 去除英文括号
+- 去除英文括号
 
 > `xxx = Utils.clearBracket(xxx)`
 
-4. 解析普通链接参数
+- 解析普通链接参数
 
 > `let params = Utils.analysisUriQuery(uri)`
