@@ -20,10 +20,10 @@ export default class Utils {
 			method: 'POST',
 			headers: {
 				'Accept': type,
-				//json形式
 				'Content-Type': type
 			},
-			body: JSON.stringify(data)
+			body: JSON.stringify(data) 
+			//body: queryString.stringify(data)//如果解析不出来，可能是服务器解析方式与fetch不合，请将type改为application/x-www-form-urlencode，且body: queryString.stringify(data)
 		};
 
 		fetch(url, fetchOptions)
